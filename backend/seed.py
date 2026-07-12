@@ -122,12 +122,13 @@ try:
     db.commit()
     print(f"  Created {len(expense_data)} expenses")
 
-    print("\n✅ Database seeded successfully!")
+    print("\n[SUCCESS] Database seeded successfully!")
     print("\nDemo Login Credentials:")
     print("  Fleet Manager:     manager@transitops.com  / demo123")
     print("  Dispatcher:        dispatch@transitops.com / demo123")
     print("  Safety Officer:    safety@transitops.com   / demo123")
     print("  Financial Analyst: finance@transitops.com  / demo123")
+
 
 except Exception as e:
     db.rollback()
